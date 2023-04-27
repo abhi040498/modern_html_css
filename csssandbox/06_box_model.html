@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model/ Margin/padding</title>
+    <style>
+        /* CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 2px #777 solid;
+            width: 500px;
+
+            /* padding on all sides */
+            padding: 20px;
+
+            /* padding individuala side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            
+            /* Padding Shortcut top right bottom left */
+            padding: 10px 20px, 20px, 10px;
+            
+            /* Padding Shortcut top/bottom left/right */
+            padding: 10px 20px;
+            
+            /* margin on all sides */
+            margin: 20px;
+
+            /* margin individuala side */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            
+            /* margin Shortcut top right bottom left */
+            margin: 10px 20px, 20px, 10px;
+            
+            /* margin Shortcut top/bottom left/right */
+            margin: 10px 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti ducimus repellendus beatae tempora
+            alias totam vitae ea reprehenderit repellat!</p>
+    </div><br>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem Two dolor sit amet consectetur adipisicing elit. Tempore corrupti ducimus repellendus beatae tempora
+            alias totam vitae ea reprehenderit repellat!</p>
+    </div>
+</body>
+</html>
