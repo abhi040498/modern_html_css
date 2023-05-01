@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+    <style>
+        .container {
+            display: flex;
+            
+        }
+        .box {
+            margin: 1rem;
+            text-align: center;
+            background-color: coral;
+            padding: 1rem;
+
+            /* offset-x | offset-y | blur-radius | color */
+            /* We can skip blur if we dont want */
+            /* we can put values -ve to display on  top-left */
+            box-shadow: 10px 10px 20px teal;
+            /* If we want on both sides */
+            box-shadow: 10px 10px 20px teal, -10px -10px 20px teal;
+
+            /* If we want inside shadow */
+            /* box-shadow:inset 10px 10px 20px teal; */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis totam deleniti fuga dolore beatae sint
+                accusamus eum officia accusantium! Dolor?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis totam deleniti fuga dolore beatae sint
+                accusamus eum officia accusantium! Dolor?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis totam deleniti fuga dolore beatae sint
+                accusamus eum officia accusantium! Dolor?</p>
+        </div>
+    </div>
+</body>
+
+</html>

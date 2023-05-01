@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* Any variables we create in the root scope we can use it anywhere */
+        :root {
+            /* variables is defined as --variabelname: property */
+            --light-color: #f4f4f4;
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --box1-width: 1;
+            --box2-width: 2;
+        }
+
+        body {
+            background-color: var(--light-color);
+        }
+        .container {
+            display: flex;
+        }
+        .box {
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box-1 {
+            flex: var(--box1-width);
+        }
+        .box-2 {
+            flex: var(--box2-width);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header><h1>CSS Variables</h1></header>
+
+    <div class="container">
+        <div class="box box-1">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet numquam suscipit ipsa veritatis eveniet id?
+        </p>
+    </div>
+    <div class="box box-2">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet numquam suscipit ipsa veritatis eveniet id?
+        </p>
+    </div>
+    </div>
+    
+</body>
+
+</html>
